@@ -1,0 +1,17 @@
+# /etc/systemd/system/ss2-kcp-server@8400.service
+#  This file is example of Container of SS2-KCP-SERVER.
+
+[Unit]
+Description=Container of SS2-KCP-SERVER
+After=docker.service
+
+[Service]
+Type=simple
+Restart=always
+ExecStartPre=-/usr/bin/docker rm -f SS2-KCP-%i
+# ExecStartPre=/usr/bin/docker pull chenhw2/ss2-kcp-server-lite
+ExecStart=/usr/bin/docker run --rm --name SS2-KCP-%i -e 'SS=ss://AEAD_AES_128_GCM:12345678' -p %i:8488/tcp -p %i:8488/udp -p 1%i:18488/udp chenhw2/ss2-kcp-server-lite
+ExecStop=-/usr/bin/docker kill SS2-KCP-%i
+
+[Install]
+WantedBy=multi-user.target
