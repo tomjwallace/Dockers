@@ -14,7 +14,7 @@ echo
 
 # Path Init
 root_dir=${RUN_ROOT:-'/ss2'}
-ssr_cli="${root_dir}/go-ss2"
+ss2_cli="${root_dir}/go-ss2"
 kcp_cli="${root_dir}/kcptun/server"
 ss2_port=8488
 
@@ -31,6 +31,6 @@ kcp2cmd(){
 
 kcp_cmd=$(kcp2cmd ${KCP} ${KCP_EXTRA_ARGS})
 
-( ${ssr_cli} -s ${SS}@:${ss2_port} -verbose ) &
+( ${ss2_cli} -s ${SS}@:${ss2_port} -verbose ) &
 
 ${kcp_cli} -t 127.0.0.1:${ss2_port} -l :1${ss2_port} ${kcp_cmd}

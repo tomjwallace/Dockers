@@ -1,5 +1,5 @@
 ### Source
-- https://github.com/chenhw2/Dockers/tree/SS2-KCP-SERVER-lite
+- https://github.com/chenhw2/Dockers/tree/SS-KCP-SERVER
   
 ### Thanks to
 - [https://github.com/shadowsocks/go-shadowsocks2][ss2ver]
@@ -7,13 +7,13 @@
   
 ### Usage
 ```
-$ docker pull chenhw2/ss2-kcp-server-lite
+$ docker pull chenhw2/ss-kcp-server
 
 $ docker run -d \
     -e "SS=[ss://cipher:pass]" \
     -e "KCP=[kcp://mode:crypt:key]" \
     -p 8488:8488/tcp -p 8488:8488/udp -p 18488:18488/udp \
-    chenhw2/ss2-kcp-server-lite
+    chenhw2/ss-kcp-server
 ```
 
 ### ENV
