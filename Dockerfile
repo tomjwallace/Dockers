@@ -5,7 +5,7 @@
 FROM chenhw2/alpine:base
 MAINTAINER CHENHW2 <https://github.com/chenhw2>
 
-ARG SS_VER=a09629dc738338290870fa1918ddedafb58395a6
+ARG SS_VER=69c41d9752fe37580ba1d6b9b3023aff28655f07
 ARG SS_URL=https://github.com/shadowsocks/shadowsocks-libev/archive/$SS_VER.tar.gz
 ARG OBFS_VER=2955a57624add482588b41fad68bbcd4c632fff5
 ARG OBFS_URL=https://github.com/shadowsocks/simple-obfs/archive/$OBFS_VER.tar.gz
