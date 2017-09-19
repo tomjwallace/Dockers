@@ -3,7 +3,7 @@ MAINTAINER CHENHW2 <https://github.com/chenhw2>
 
 ENV RUN_ROOT=/ss2
 ARG SS2_URL=https://github.com/riobard/go-shadowsocks2/releases/download/v0.0.9/shadowsocks2-linux-x64.gz
-ARG KCP_URL=https://github.com/xtaci/kcptun/releases/download/v20170525/kcptun-linux-amd64-20170525.tar.gz
+ARG KCP_URL=https://github.com/xtaci/kcptun/releases/download/v20170904/kcptun-linux-amd64-20170904.tar.gz
 
 # /ss2/go-ss2
 RUN mkdir -p ${RUN_ROOT} \
