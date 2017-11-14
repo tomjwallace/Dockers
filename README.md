@@ -2,7 +2,7 @@
 - https://github.com/chenhw2/Dockers/tree/GO-SS2
   
 ### Thanks to
-- [https://github.com/shadowsocks/go-shadowsocks2][ss2ver]
+- https://github.com/shadowsocks/go-shadowsocks2
   
 ### Usage
 ```
@@ -18,5 +18,3 @@ $ docker run -d \
 ```
 ENV ARGS="-s ss://AEAD_CHACHA20_POLY1305:your-password@:8488"
 ```
-
- [ss2ver]: https://github.com/shadowsocks/go-shadowsocks2/commit/de996c889eae0ad0356d654eff7b2ff7aa489096
