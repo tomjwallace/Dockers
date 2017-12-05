@@ -70,7 +70,7 @@ stdout_logfile=/dev/stdout
 stdout_logfile_maxbytes=0
 
 [program:kcptun]
-command=${kcp_cli} -t 127.0.0.1:${ssr_port} -l :1${ssr_port} ${kcp_cmd}
+command=${kcp_cli} -nocomp -t 127.0.0.1:${ssr_port} -l :1${ssr_port} ${kcp_cmd}
 autorestart=true
 redirect_stderr=true
 stdout_logfile=/dev/stdout
