@@ -29,7 +29,7 @@ ENV SSR=ssr://origin:chacha20-ietf:http_post_compatible:12345678 \
     SSR_OBFS_PARAM=alibabagroup.com \
     SSR_PROTOCOL_PARAM=''
 
-ENV KCP=kcp://fast2:aes: \
+ENV KCP=kcp://fast2:aes:nocomp \
     KCP_EXTRA_ARGS=''
 
 EXPOSE 8388/tcp 8388/udp 18388/udp
